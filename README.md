@@ -3,7 +3,7 @@ a tutorial for training Chinese-word2vec using Wiki corpus
 
 word2vec词向量是NLP领域的基础，如何快速地训练出符合自己项目预期的词向量是必要的。
 
-【注】：本项目主要目的在于快速的构建通用中文word2vec词向量，关于word2vec原理后期有时间再补充（nlp新手，文中不足之处欢迎各位大神批评指正，亦可共同交流学习）。
+【注】：本项目主要目的在于快速的构建通用中文word2vec词向量，关于word2vec原理后期有时间再补充（文中不足之处欢迎各位大神批评指正，亦可共同交流学习）。
 
 ## 0. 环境要求
 * python 3.6<br>
@@ -19,7 +19,7 @@ word2vec词向量是NLP领域的基础，如何快速地训练出符合自己项
 * python的gensim包中提供了WikiCorpus方法可以直接处理Wiki的语料库（xml的baz格式，无需解压），具体可参见脚本[parse_zhwiki_corpus.py](https://github.com/lzhenboy/word2vec-Chinese/blob/master/parse_zhwiki_corpus.py/)。<br>
 执行以下命令可以将xml的Wiki语料库转换为txt格式：<br>
 ```python
-python parse_zhwiki.py -i zhwiki-latest-pages-articles.xml.bz2 -o corpus.zhwiki.txt
+python parse_zhwiki_corpus.py -i zhwiki-latest-pages-articles.xml.bz2 -o corpus.zhwiki.txt
 ```
 * 生成的```corpus.zhwiki.txt```有1.04G，共有32w+的documents（每行为1个doc）。
 ### 2.2 中文简繁体转换
